@@ -91,13 +91,14 @@ PUT /_security/privilege
   "myapp": {
     "read": {
       "actions": [ <1>
-        "data:read/*" , <2> 
-        "action:login" ], 
-        "metadata": { <3>
-          "description": "Read access to myapp"
-        }
+        "data:read/*", <2> 
+        "action:login" 
+      ], 
+      "metadata": { <3>
+        "description": "Read access to myapp"
       }
     }
+  }
 }
 --------------------------------------------------
 <1> These strings have significance within the "myapp" application. {es} does not 
